@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btnAbrir{
+    margin-top: 25%;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    height: 20rem;
+    width: 15rem;
+    background-color: #0000ff;
+    border-radius: 10px;
+    text-align: center;
+    animation: animated;
+    animation-duration: 1s;
+}
+
+.btnFechar{
+    border: none;
+    background-color: #0000;
+    color: #ffffff;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.btnFechar:hover{
+    background-color: #ff0000;
+}
+
+@keyframes animated{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
